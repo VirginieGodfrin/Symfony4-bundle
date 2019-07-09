@@ -24,8 +24,28 @@ class KnpULoremIpsumExtension extends Extension
     {
     	// Load the config file looks
     	// When the container builds, the load() method is called and our bundle adds its service.
-    	var_dump($configs);die;
+    	// var_dump($configs);die;
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+        // Get Configuration
+        $configuration = $this->getConfiguration($configs, $container);
+        $config = $this->processConfiguration($configuration, $configs);
+        // var_dump($config);die;
+
+        // Dynamically Setting the Arguments
+        // $container->getDefinition() This returns a Definition object, which holds the service's class name, 
+        // arguments and a bunch of other stuff.
+        $definition = $container->getDefinition('knpu_lorem_ipsum.knpu_ipsum');
+        $definition->setArgument(0, $config['unicorns_are_real']);
+        $definition->setArgument(1, $config['min_sunshine']);
     }
+
+    // Create alias to use in config.yml, first create public function getAlias  
+    public function getAlias()
+    {
+        return 'knpu_lorem_ipsum';
+    }
+
+    // Creating the Configuration Class
 }

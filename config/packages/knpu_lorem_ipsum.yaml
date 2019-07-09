@@ -1,4 +1,4 @@
 # the config file for the KnpULoremIpsum-Bundle
 # to find the key look into the error message
-knp_u_lorem_ipsum:
-  bar: true
+knpu_lorem_ipsum:
+  min_sunshine: 5
