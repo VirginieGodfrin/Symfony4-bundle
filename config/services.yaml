@@ -38,4 +38,4 @@ services:
     # When you create a re-usable bundle, 
     # you actually don't want to rely on auto-registration or autowiring. Instead, as a best-practice, 
     # you should configure everything explicitly to avoid any surprises. (no option no arguments)
-    KnpU\LoremIpsumBundle\KnpUIpsum: ~
+    # KnpU\LoremIpsumBundle\KnpUIpsum: ~
