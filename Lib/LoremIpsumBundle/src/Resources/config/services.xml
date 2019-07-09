@@ -7,6 +7,12 @@
 	<!-- xml is the best practice for reUsable bundle -->
 	<!-- xml doesn't require the symfony/yaml component, which makes your bundle feel a bit lighter. -->
 	<!-- declaration du service -->
-        <service id="KnpU\LoremIpsumBundle\KnpUIpsum" />
+	<!-- the best practice is to use snake-case service id's.  -->
+	<!-- if your service is important you can make it public (in SF4 services are all private). Let's do this: public="true". And you need to add public="false" to the other -->
+        <service id="knpu_lorem_ipsum.knpu_ipsum" class="KnpU\LoremIpsumBundle\KnpUIpsum" public="true" />
+		<!-- define alias service (can be used by user) -->
+			<!-- first the id with the classname value-->
+			<!-- second the alias with the id service (above) -->
+        <service id="KnpU\LoremIpsumBundle\KnpUIpsum" alias="knpu_lorem_ipsum.knpu_ipsum" public="false" />
     </services>
 </container>
