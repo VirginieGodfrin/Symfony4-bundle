@@ -36,6 +36,7 @@
     },
     "autoload": {
         "psr-4": {
+            "KnpU\\LoremIpsumBundle\\": "lib/LoremIpsumBundle/src/",
             "App\\": "src/"
         }
     },
