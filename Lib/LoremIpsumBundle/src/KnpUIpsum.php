@@ -10,6 +10,8 @@ namespace KnpU\LoremIpsumBundle;
  */
 class KnpUIpsum
 {
+    // the 2 importants arguments 
+    // And we control them in config/packages
     private $unicornsAreReal;
 
     private $minSunshine;

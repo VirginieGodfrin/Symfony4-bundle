@@ -24,6 +24,7 @@ class KnpULoremIpsumExtension extends Extension
     {
     	// Load the config file looks
     	// When the container builds, the load() method is called and our bundle adds its service.
+    	var_dump($configs);die;
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
     }
