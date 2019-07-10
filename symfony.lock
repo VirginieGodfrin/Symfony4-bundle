@@ -50,6 +50,9 @@
     "knplabs/knp-markdown-bundle": {
         "version": "1.6.0"
     },
+    "knpuniversity/lorem-ipsum-bundle": {
+        "version": "dev-master"
+    },
     "michelf/php-markdown": {
         "version": "1.8.0"
     },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2dac935e68988af4d0ce54ff8ed846cd",
+    "content-hash": "4170b46cf6f4cbcc75a0b8bfa8eb121f",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -704,6 +704,50 @@
                 "markdown"
             ],
             "time": "2018-01-23T15:34:53+00:00"
+        },
+        {
+            "name": "knpuniversity/lorem-ipsum-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/knpuniversity/lorem-ipsum-bundle.git",
+                "reference": "f05d32821046989eeecb36b0ed8079e8c0d5309b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/knpuniversity/lorem-ipsum-bundle/zipball/f05d32821046989eeecb36b0ed8079e8c0d5309b",
+                "reference": "f05d32821046989eeecb36b0ed8079e8c0d5309b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/config": "^3.4 || ^4.0",
+                "symfony/dependency-injection": "^3.4 || ^4.0",
+                "symfony/http-kernel": "^3.4 || ^4.0"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "^3.4 || ^4.0",
+                "symfony/framework-bundle": "^3.4 || ^4.0",
+                "symfony/phpunit-bridge": "^3.4 || ^4.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "KnpU\\LoremIpsumBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Weaver",
+                    "email": "ryan@knpuniversity.com"
+                }
+            ],
+            "description": "Happy lorem ipsum",
+            "time": "2018-03-22T12:23:34+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -2697,6 +2741,11 @@
         {
             "name": "symfony/lts",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/lts.git",
+                "reference": "c1affae45b78aee036effa1759237e7fa96d4af2"
+            },
             "conflict": {
                 "symfony/asset": ">=5",
                 "symfony/browser-kit": ">=5",
@@ -4299,6 +4348,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "knpuniversity/lorem-ipsum-bundle": 20,
         "symfony/lts": 20
     },
     "prefer-stable": false,
