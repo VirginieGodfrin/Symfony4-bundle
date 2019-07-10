@@ -2,7 +2,8 @@
 
 namespace KnpU\LoremIpsumBundle;
 
-class KnpUWordProvider
+// Implement the KnpUWordProvider with WordProviderInterface
+class KnpUWordProvider implements WordProviderInterface
 {
     public function getWordList(): array
     {

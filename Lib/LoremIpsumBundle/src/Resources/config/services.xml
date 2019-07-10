@@ -10,11 +10,13 @@
 	<!-- the best practice is to use snake-case service id's.  -->
 	<!-- if your service is important you can make it public (in SF4 services are all private). Let's do this: public="true". And you need to add public="false" to the other -->
         <service id="knpu_lorem_ipsum.knpu_ipsum" class="KnpU\LoremIpsumBundle\KnpUIpsum" public="true">
-            <argument type="service" id="knpu_lorem_ipsum.knpu_word_provider" />
+            <argument type="service" id="knpu_lorem_ipsum.word_provider" />
         </service>
 
         <!-- define KnpUWordProvider no need to be public -->
         <service id="knpu_lorem_ipsum.knpu_word_provider" class="KnpU\LoremIpsumBundle\KnpUWordProvider" />
+        <!-- Create an alias for word_provider and there is an new service in the container called knpu_lorem_ipsum.word_provider -->
+        <service id="knpu_lorem_ipsum.word_provider" alias="knpu_lorem_ipsum.knpu_word_provider" public="false" />
 
 		<!-- define alias service (can be used by user) -->
 			<!-- first the id with the classname value-->

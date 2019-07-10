@@ -1,5 +1,4 @@
 <?php 
-
 namespace App\Service;
 
 use KnpU\LoremIpsumBundle\KnpUWordProvider;
