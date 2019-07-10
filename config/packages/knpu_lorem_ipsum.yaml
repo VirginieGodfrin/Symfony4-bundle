@@ -2,3 +2,4 @@
 # to find the key look into the error message
 knpu_lorem_ipsum:
   min_sunshine: 5
+  word_provider: App\Service\CustomWordProvider
