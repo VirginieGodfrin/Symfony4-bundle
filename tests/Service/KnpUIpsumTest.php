@@ -2,8 +2,8 @@
 
 namespace App\Tests\Service;
 
-use App\Service\KnpUIpsum;
-use PHPUnit\Framework\TestCase;
+use KnpU\LoremIpsumBundle\KnpUIpsum;
+use KnpU\LoremIpsumBundle\KnpUWordProvider;
 
 class KnpUIpsumTest extends TestCase
 {
